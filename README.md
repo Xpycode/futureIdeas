@@ -6,11 +6,9 @@ A collection of product ideas and specs for possible future apps.
 
 | Idea | Platform | Status | One-liner |
 |---|---|---|---|
-| [ChannelMap](ideas/channelmap/SPEC.md) | macOS (SwiftUI) | Proposed build spec v0.1 | See, hear and reorganize the audio inside your recordings. |
-| [MediaCheck](ideas/mediacheck/SPEC.md) | macOS (SwiftUI) | Proposed build spec v0.1 | Find technical problems in footage before you edit. |
+| [ChannelMap](ideas/channelmap/SPEC.md) | macOS (SwiftUI) | Proposed build spec v0.1 | See, hear and reorganize the audio inside your recordings. Includes the former Audio Channel Remapper draft. |
+| [MediaCheck](ideas/mediacheck/SPEC.md) | macOS (SwiftUI) | Proposed build spec v0.1 | Find technical problems in footage before you edit. Delivery profiles and loudness (former QC Checker draft) are its phase two. |
 | [VAM Core](ideas/vam-core/SPEC.md) | macOS (SwiftUI) | Proposed build spec v0.1 | Offline catalog of recordings, file locations and their relationships. Also defines the shared interchange envelope. |
-| [QC Checker](ideas/qc-checker/SPEC.md) | macOS (SwiftUI) | Earlier spec draft | Check video files against a delivery spec, including loudness, and get a pass/fail report. Overlaps the DeliveryCheck idea (a MediaCheck profile). |
-| [Audio Channel Remapper](ideas/audio-channel-remapper/SPEC.md) | macOS (SwiftUI) | Earlier spec draft | Reroute, reorder, split and merge audio channels without re-encoding video. Overlaps ChannelMap. |
 
 ## Research
 
@@ -20,4 +18,4 @@ A collection of product ideas and specs for possible future apps.
 
 Each idea lives in `ideas/<name>/` with a `SPEC.md`. Research and decision logs live in `research/`.
 
-All macOS apps here ship as direct downloads, signed with Developer ID and notarised. The Mac App Store is not a goal.
+All apps here target macOS 26+ on Apple Silicon (to confirm against existing apps) and ship as direct downloads, signed with Developer ID and notarised. The Mac App Store is not a goal.

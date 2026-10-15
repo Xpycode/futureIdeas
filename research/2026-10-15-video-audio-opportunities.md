@@ -64,7 +64,7 @@ Inspect an exported file against a user-defined delivery profile: dimensions, fr
 
 **Validation:** collect actual delivery sheets, including exceptions and channel naming requirements. Avoid presenting a preset as universally valid for a platform or broadcaster. Version the user-approved requirements and keep analysis separate from correction.
 
-**Decision:** extension candidate after MediaCheck is stable.
+**Decision:** extension candidate after MediaCheck is stable. Specified as [MediaCheck §10](../ideas/mediacheck/SPEC.md#10-delivery-profiles-phase-two-deliverycheck), which absorbed the earlier QC Checker draft.
 
 ### MediaCompare
 
@@ -152,3 +152,4 @@ Reviewed 15 October 2026. Sources support the narrow capability summaries above,
 - 2026-10-15: Initial portfolio assessment and public-source review.
 - 2026-10-15: Selected ChannelMap, MediaCheck and VAM Core for separate implementation specifications; recorded remaining opportunities and limits here.
 - 2026-10-15: Distribution decided: notarised direct download, no Mac App Store.
+- 2026-10-15: Merged the earlier Audio Channel Remapper draft into ChannelMap (§9) and the QC Checker draft into MediaCheck (§10, DeliveryCheck). Platform baseline across specs: macOS 26+, Apple Silicon; MXF is phase two everywhere.

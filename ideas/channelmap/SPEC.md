@@ -105,7 +105,76 @@ Provisional usability target: a new user can identify and export two desired cha
 
 Do not expand format promises before the gate passes. Review backend licensing and distribution obligations for the exact build; this specification makes no license determination.
 
-## 9. Sources and remaining validation
+## 9. Implementation reference
+
+*Merged from the earlier Audio Channel Remapper draft, reconciled with the scope above. Where the two disagreed, this specification wins: MXF and MP4 export stay in phase two, audition is MVP, and all MVP audio output is PCM.*
+
+### 9.1 What gets re-encoded
+
+The export plan (§4) shows one badge per output stream and repeats the result in a one-line summary, e.g. “Video: copied · Audio: 2 streams copied, 1 rewritten as PCM.”
+
+| Situation | Action | Badge |
+|---|---|---|
+| Video stream(s) | Always stream copy; never a fallback to encoding | `Copy` |
+| Whole audio stream retained unchanged | Stream copy | `Copy` |
+| PCM source; channels split, reordered or paired at the same rate | Decode and rewrite as PCM at the source bit depth and sample rate | `PCM rewrite` (sample-exact; verified per §7) |
+| Compressed source (e.g. AAC); channels split, reordered or paired | Decode and write PCM; no new lossy generation | `Decoded to PCM` |
+| Sources with different sample rates in one output | Blocked in MVP; a later resampling option is never sample-exact | `Resampled` (later) |
+| Gain or polarity (later) | Process in floating point, dither when reducing to integer | `Processed` (later; excluded from hash comparison) |
+
+### 9.2 FFmpeg command construction (illustrative)
+
+Verify every pattern against the pinned build in the feasibility gate. Arguments are arrays (§5); the strings below are only for readability.
+
+- Always: `-map 0:v -c:v copy`, `-map_metadata 0`, and carry the start timecode. For MOV, check whether the `tmcd` track survives stream copy or must be recreated with `-timecode` from the probe.
+- Retain a whole stream: `-map 0:a:N -c:a:K copy`.
+- One channel to a mono WAV: `[0:a:0]pan=mono|c0=c2[out]`, then `-map [out] -c:a pcm_s24le`.
+- Swap stereo: `[0:a:0]pan=stereo|c0=c1|c1=c0[out]`.
+- Pair two mono streams into stereo: `[0:a:0][0:a:1]amerge=inputs=2,pan=stereo|c0=c0|c1=c1[out]` (or the `join` filter with an explicit channel map).
+- Digital-zero channel: zero gain in `pan` (e.g. `c1=0*c0`) so length matches exactly; avoid a separate `anullsrc` input that needs its own duration.
+- PCM codec matches the source: `pcm_s16le`, `pcm_s24le`, `pcm_s32le` or `pcm_f32le`. If `bits_per_raw_sample` is unknown, default to 24-bit and disclose it in the plan.
+- Sample-exactness: a pure channel mapping should pass samples through unchanged, but confirm with fixtures for each sample format, especially 32-bit integer PCM, which a 32-bit float path cannot represent exactly.
+
+### 9.3 Copied-video verification
+
+Hash compressed packets rather than decoded frames: `framemd5` or `streamhash` with `-c:v copy` on source and output. This is faster than decoding ProRes or HEVC and is a stricter test of “picture untouched.” Use a decoded-frame comparison only where the muxer changes packet payloads (§7).
+
+### 9.4 Candidate built-in presets
+
+Each preset declares the source topology it requires; batch files that don't match go to review (§2).
+
+1. Swap L/R (1× stereo → 1× stereo, swapped).
+2. Stereo → 2× mono.
+3. 2× mono → stereo.
+4. Left to both (channel 1 to L and R; camera lav on channel 1).
+5. Right to both.
+6. 8× mono → 4× stereo (pairs 1/2, 3/4, 5/6, 7/8).
+7. 4× stereo → 8× mono.
+8. Keep only stream 1.
+
+### 9.5 Phase two and later
+
+- **MXF OP1a:** broadcast ingest usually expects mono PCM tracks. FFmpeg’s MXF muxer has its own restrictions (reportedly 48 kHz PCM only); confirm against the pinned build and test outputs with a real ingest target. A “Broadcast 8-channel layout” preset (T1/T2 mix L/R, T3/T4 M&E L/R, T5–T8 assigned or silent) belongs here.
+- **MP4 export:** needs its own support matrix; PCM support in MP4 is limited.
+- **Per-route gain and polarity**, then **summing/downmix** with stated coefficients (e.g. 5.1 → stereo).
+- **Track names and language tags** (`handler_name`, `language`) where verified supported.
+- **Per-track sync offset** as an explicit policy (§6).
+- **BWF output** preserving `bext` and time reference.
+
+### 9.6 Edge cases
+
+- Streams of different lengths: never truncate video; the export plan states any padding.
+- Untagged layouts stay unknown (§3); the user can declare a layout but the declaration is shown as user-supplied.
+- Edit lists and start offsets: preserve them and verify the A/V offset (§7).
+- Check free space against an estimated output size before starting.
+- Files with more than 16 streams or 64 channels: the inspector scrolls and stays responsive.
+
+### 9.7 Open questions
+
+1. MXF (phase two): enforce mono-track output, or warn?
+2. When a shared FFmpeg/process-runner package with VideoContainerSwitcher, P2toMXF and MediaCheck becomes justified (see the research log: share only after real duplication appears).
+
+## 10. Sources and remaining validation
 
 Sources checked 15 October 2026; implementation must target the pinned backend, not assume nightly documentation matches it.
 
