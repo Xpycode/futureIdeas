@@ -57,7 +57,7 @@ Editors, freelancers, small post houses and broadcast staff need to confirm a fi
 
 **Concurrency:** Swift concurrency with a configurable max parallel jobs (default: 2). Each file is a job; loudness decode is the expensive part. Subprocesses must be cancellable (terminate on cancel).
 
-**Sandbox / distribution:** design for App Store compatibility: bundled, signed helper binaries; user-selected file access via security-scoped bookmarks. Direct distribution is fine as a fallback.
+**Distribution:** direct download, Developer ID signed and notarised. Mac App Store is not a goal, so no App Sandbox is required. Bundled `ffmpeg`/`ffprobe` helpers must be signed with hardened runtime and included in notarisation.
 
 ---
 

@@ -74,6 +74,8 @@ The app must make this explicit in the UI before export.
 | Solo-listen (v1.1) | ffmpeg extracts N seconds of one channel to temp WAV → AVAudioPlayer | |
 | Presets | JSON in Application Support | Codable, versioned |
 
+**Distribution:** direct download, Developer ID signed and notarised. Mac App Store is not a goal, so no App Sandbox is required. Bundled `ffmpeg`/`ffprobe` helpers must be signed with hardened runtime and included in notarisation.
+
 Reuse the ffmpeg bundling and process-runner code from VideoContainerSwitcher / Conjoyn / P2toMXF where possible.
 
 ---
