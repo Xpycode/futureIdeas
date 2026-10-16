@@ -1,0 +1,49 @@
+[
+  {
+    "argv": [
+      "/opt/homebrew/bin/ffmpeg",
+      "-version"
+    ],
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/opt/homebrew/bin/ffmpeg",
+      "-nostdin",
+      "-v",
+      "error",
+      "-n",
+      "-f",
+      "lavfi",
+      "-i",
+      "anullsrc=r=48000:cl=mono",
+      "-t",
+      "0.1",
+      "-af",
+      "no_such_channelmap_filter",
+      "/var/folders/ly/b2sk443n0hq1_z9mgf4q8f4w0000gn/T/channelmap-b7-lifecycle-c9oe66sx/failed.partial.wav"
+    ],
+    "exit": 8,
+    "stderr": "[AVFilterGraph @ 0x7a5ac1c180] No such filter: 'no_such_channelmap_filter'\nError opening output file /var/folders/ly/b2sk443n0hq1_z9mgf4q8f4w0000gn/T/channelmap-b7-lifecycle-c9oe66sx/failed.partial.wav.\nError opening output files: Filter not found\n"
+  },
+  {
+    "argv": [
+      "/opt/homebrew/bin/ffmpeg",
+      "-nostdin",
+      "-v",
+      "error",
+      "-n",
+      "-re",
+      "-f",
+      "lavfi",
+      "-i",
+      "anullsrc=r=48000:cl=mono",
+      "-c:a",
+      "pcm_s24le",
+      "/var/folders/ly/b2sk443n0hq1_z9mgf4q8f4w0000gn/T/channelmap-b7-lifecycle-c9oe66sx/cancel.partial.wav"
+    ],
+    "exit": 255,
+    "stderr": ""
+  }
+]

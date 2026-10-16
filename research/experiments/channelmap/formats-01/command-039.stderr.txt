@@ -1,0 +1,9 @@
+[aac @ 0x7914811500] Unsupported channel layout "6 channels"
+[aost#0:1/aac @ 0x7914824300] [enc:aac @ 0x7914804bd0] Error while opening encoder - maybe incorrect parameters such as bit_rate, rate, width or height.
+[af#0:1 @ 0x791548c000] Error sending frames to consumers: Invalid argument
+[af#0:1 @ 0x791548c000] Task finished with error code: -22 (Invalid argument)
+[af#0:1 @ 0x791548c000] Terminating thread with return code -22 (Invalid argument)
+[aost#0:1/aac @ 0x7914824300] [enc:aac @ 0x7914804bd0] Could not open encoder before EOF
+[aost#0:1/aac @ 0x7914824300] Task finished with error code: -22 (Invalid argument)
+[aost#0:1/aac @ 0x7914824300] Terminating thread with return code -22 (Invalid argument)
+[out#0/mov @ 0x7915414480] Nothing was written into output file, because at least one of its streams received no packets.

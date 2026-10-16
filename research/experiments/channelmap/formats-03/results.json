@@ -1,0 +1,1065 @@
+{
+  "execution_status": "completed",
+  "scratch": "/var/folders/ly/b2sk443n0hq1_z9mgf4q8f4w0000gn/T/channelmap-formats-0z6obpig",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "cases": [
+    {
+      "name": "pcm32-eight",
+      "source": "/var/folders/ly/b2sk443n0hq1_z9mgf4q8f4w0000gn/T/channelmap-formats-0z6obpig/pcm32-eight.mov",
+      "output": "/var/folders/ly/b2sk443n0hq1_z9mgf4q8f4w0000gn/T/channelmap-formats-0z6obpig/pcm32-eight-routed.mov",
+      "source_sha256": "76e9f5a2493b6a96e285e759fa90584ad35ecdd2413ff9b03fc90bbe0bd17294",
+      "generated_frames": 48024,
+      "decoded_frames": 48024,
+      "decoded_interleaved_sha256": "f018000af9a9951edd07b9521693ad056ddef6967445d9a916bf037e0f81d90c",
+      "reference_sha256": [
+        "3999a7dac3181811a130fb5d113aa54073d0ca4c026c23697ac4258d79a2ef00",
+        "085e3b45baa89e986f6b49d635d9aa8b95b83233103cfa91f7e8f5ba2d00ac6d"
+      ],
+      "source_presentation_span": [
+        "1/4",
+        "2501/2000"
+      ],
+      "source_audio_packets": [
+        {
+          "pts": 12000,
+          "duration": 1024
+        },
+        {
+          "pts": 13024,
+          "duration": 1024
+        },
+        {
+          "pts": 14048,
+          "duration": 1024
+        },
+        {
+          "pts": 15072,
+          "duration": 1024
+        },
+        {
+          "pts": 16096,
+          "duration": 1024
+        },
+        {
+          "pts": 17120,
+          "duration": 1024
+        },
+        {
+          "pts": 18144,
+          "duration": 1024
+        },
+        {
+          "pts": 19168,
+          "duration": 1024
+        },
+        {
+          "pts": 20192,
+          "duration": 1024
+        },
+        {
+          "pts": 21216,
+          "duration": 1024
+        },
+        {
+          "pts": 22240,
+          "duration": 1024
+        },
+        {
+          "pts": 23264,
+          "duration": 1024
+        },
+        {
+          "pts": 24288,
+          "duration": 1024
+        },
+        {
+          "pts": 25312,
+          "duration": 1024
+        },
+        {
+          "pts": 26336,
+          "duration": 1024
+        },
+        {
+          "pts": 27360,
+          "duration": 1024
+        },
+        {
+          "pts": 28384,
+          "duration": 1024
+        },
+        {
+          "pts": 29408,
+          "duration": 1024
+        },
+        {
+          "pts": 30432,
+          "duration": 1024
+        },
+        {
+          "pts": 31456,
+          "duration": 1024
+        },
+        {
+          "pts": 32480,
+          "duration": 1024
+        },
+        {
+          "pts": 33504,
+          "duration": 1024
+        },
+        {
+          "pts": 34528,
+          "duration": 1024
+        },
+        {
+          "pts": 35552,
+          "duration": 1024
+        },
+        {
+          "pts": 36576,
+          "duration": 1024
+        },
+        {
+          "pts": 37600,
+          "duration": 1024
+        },
+        {
+          "pts": 38624,
+          "duration": 1024
+        },
+        {
+          "pts": 39648,
+          "duration": 1024
+        },
+        {
+          "pts": 40672,
+          "duration": 1024
+        },
+        {
+          "pts": 41696,
+          "duration": 1024
+        },
+        {
+          "pts": 42720,
+          "duration": 1024
+        },
+        {
+          "pts": 43744,
+          "duration": 1024
+        },
+        {
+          "pts": 44768,
+          "duration": 1024
+        },
+        {
+          "pts": 45792,
+          "duration": 1024
+        },
+        {
+          "pts": 46816,
+          "duration": 1024
+        },
+        {
+          "pts": 47840,
+          "duration": 1024
+        },
+        {
+          "pts": 48864,
+          "duration": 1024
+        },
+        {
+          "pts": 49888,
+          "duration": 1024
+        },
+        {
+          "pts": 50912,
+          "duration": 1024
+        },
+        {
+          "pts": 51936,
+          "duration": 1024
+        },
+        {
+          "pts": 52960,
+          "duration": 1024
+        },
+        {
+          "pts": 53984,
+          "duration": 1024
+        },
+        {
+          "pts": 55008,
+          "duration": 1024
+        },
+        {
+          "pts": 56032,
+          "duration": 1024
+        },
+        {
+          "pts": 57056,
+          "duration": 1024
+        },
+        {
+          "pts": 58080,
+          "duration": 1024
+        },
+        {
+          "pts": 59104,
+          "duration": 920
+        }
+      ],
+      "sample_gate": "passed",
+      "presentation_gate": "passed",
+      "errors": [],
+      "outputs": [
+        {
+          "samples": 48024,
+          "sha256": "3999a7dac3181811a130fb5d113aa54073d0ca4c026c23697ac4258d79a2ef00",
+          "presentation_span": [
+            "1/4",
+            "2501/2000"
+          ],
+          "errors": []
+        },
+        {
+          "samples": 48024,
+          "sha256": "085e3b45baa89e986f6b49d635d9aa8b95b83233103cfa91f7e8f5ba2d00ac6d",
+          "presentation_span": [
+            "1/4",
+            "2501/2000"
+          ],
+          "errors": []
+        }
+      ],
+      "source_unchanged": true
+    },
+    {
+      "name": "pcm24-six",
+      "source": "/var/folders/ly/b2sk443n0hq1_z9mgf4q8f4w0000gn/T/channelmap-formats-0z6obpig/pcm24-six.mov",
+      "output": "/var/folders/ly/b2sk443n0hq1_z9mgf4q8f4w0000gn/T/channelmap-formats-0z6obpig/pcm24-six-routed.mov",
+      "source_sha256": "97d02ceedc0697bccfe88d69676269a5772cf2f57380455482054cf6a45b4ec1",
+      "generated_frames": 48024,
+      "decoded_frames": 48024,
+      "decoded_interleaved_sha256": "17f82e524abea5c86c34b4239958ebbef1088db2711756f6f1785a85893b6f16",
+      "reference_sha256": [
+        "05dfe0b8d26ce35b2d88eac6e8a3ac22af02e91a06c9907e3ebd9fa83cb9ad66",
+        "7472548a98fef7dce67de57cf06a996cbf626e9e984164fcf5fb1de742606b42"
+      ],
+      "source_presentation_span": [
+        "1/4",
+        "2501/2000"
+      ],
+      "source_audio_packets": [
+        {
+          "pts": 12000,
+          "duration": 1024
+        },
+        {
+          "pts": 13024,
+          "duration": 1024
+        },
+        {
+          "pts": 14048,
+          "duration": 1024
+        },
+        {
+          "pts": 15072,
+          "duration": 1024
+        },
+        {
+          "pts": 16096,
+          "duration": 1024
+        },
+        {
+          "pts": 17120,
+          "duration": 1024
+        },
+        {
+          "pts": 18144,
+          "duration": 1024
+        },
+        {
+          "pts": 19168,
+          "duration": 1024
+        },
+        {
+          "pts": 20192,
+          "duration": 1024
+        },
+        {
+          "pts": 21216,
+          "duration": 1024
+        },
+        {
+          "pts": 22240,
+          "duration": 1024
+        },
+        {
+          "pts": 23264,
+          "duration": 1024
+        },
+        {
+          "pts": 24288,
+          "duration": 1024
+        },
+        {
+          "pts": 25312,
+          "duration": 1024
+        },
+        {
+          "pts": 26336,
+          "duration": 1024
+        },
+        {
+          "pts": 27360,
+          "duration": 1024
+        },
+        {
+          "pts": 28384,
+          "duration": 1024
+        },
+        {
+          "pts": 29408,
+          "duration": 1024
+        },
+        {
+          "pts": 30432,
+          "duration": 1024
+        },
+        {
+          "pts": 31456,
+          "duration": 1024
+        },
+        {
+          "pts": 32480,
+          "duration": 1024
+        },
+        {
+          "pts": 33504,
+          "duration": 1024
+        },
+        {
+          "pts": 34528,
+          "duration": 1024
+        },
+        {
+          "pts": 35552,
+          "duration": 1024
+        },
+        {
+          "pts": 36576,
+          "duration": 1024
+        },
+        {
+          "pts": 37600,
+          "duration": 1024
+        },
+        {
+          "pts": 38624,
+          "duration": 1024
+        },
+        {
+          "pts": 39648,
+          "duration": 1024
+        },
+        {
+          "pts": 40672,
+          "duration": 1024
+        },
+        {
+          "pts": 41696,
+          "duration": 1024
+        },
+        {
+          "pts": 42720,
+          "duration": 1024
+        },
+        {
+          "pts": 43744,
+          "duration": 1024
+        },
+        {
+          "pts": 44768,
+          "duration": 1024
+        },
+        {
+          "pts": 45792,
+          "duration": 1024
+        },
+        {
+          "pts": 46816,
+          "duration": 1024
+        },
+        {
+          "pts": 47840,
+          "duration": 1024
+        },
+        {
+          "pts": 48864,
+          "duration": 1024
+        },
+        {
+          "pts": 49888,
+          "duration": 1024
+        },
+        {
+          "pts": 50912,
+          "duration": 1024
+        },
+        {
+          "pts": 51936,
+          "duration": 1024
+        },
+        {
+          "pts": 52960,
+          "duration": 1024
+        },
+        {
+          "pts": 53984,
+          "duration": 1024
+        },
+        {
+          "pts": 55008,
+          "duration": 1024
+        },
+        {
+          "pts": 56032,
+          "duration": 1024
+        },
+        {
+          "pts": 57056,
+          "duration": 1024
+        },
+        {
+          "pts": 58080,
+          "duration": 1024
+        },
+        {
+          "pts": 59104,
+          "duration": 920
+        }
+      ],
+      "sample_gate": "passed",
+      "presentation_gate": "passed",
+      "errors": [],
+      "outputs": [
+        {
+          "samples": 48024,
+          "sha256": "05dfe0b8d26ce35b2d88eac6e8a3ac22af02e91a06c9907e3ebd9fa83cb9ad66",
+          "presentation_span": [
+            "1/4",
+            "2501/2000"
+          ],
+          "errors": []
+        },
+        {
+          "samples": 48024,
+          "sha256": "7472548a98fef7dce67de57cf06a996cbf626e9e984164fcf5fb1de742606b42",
+          "presentation_span": [
+            "1/4",
+            "2501/2000"
+          ],
+          "errors": []
+        }
+      ],
+      "source_unchanged": true
+    },
+    {
+      "name": "aac-six-zero",
+      "source": "/var/folders/ly/b2sk443n0hq1_z9mgf4q8f4w0000gn/T/channelmap-formats-0z6obpig/aac-six-zero.mov",
+      "output": "/var/folders/ly/b2sk443n0hq1_z9mgf4q8f4w0000gn/T/channelmap-formats-0z6obpig/aac-six-zero-routed.mov",
+      "source_sha256": "1fe3d954165370c9d8064d096831303b7cb0d1d61144841c4c41f44641b42a19",
+      "generated_frames": 48024,
+      "decoded_frames": 48024,
+      "decoded_interleaved_sha256": "bce9d17622edf583b0949bce03c69803c9798452056294fe4e743ff11f3106c1",
+      "reference_sha256": [
+        "71c87036d7e9092f388a5873b75e487a172a902bd4a1f015b58a757276694c06",
+        "dc6d46396a21e00d2ae8c45eb85928f98d81693113e9c85f25ff81850cdf7e45"
+      ],
+      "source_presentation_span": [
+        "0",
+        "2001/2000"
+      ],
+      "source_audio_packets": [
+        {
+          "pts": -1024,
+          "duration": 1024,
+          "side_data_list": [
+            {
+              "side_data_type": "Skip Samples",
+              "skip_samples": 1024,
+              "discard_padding": 0,
+              "skip_reason": 0,
+              "discard_reason": 0
+            }
+          ]
+        },
+        {
+          "pts": 0,
+          "duration": 1024
+        },
+        {
+          "pts": 1024,
+          "duration": 1024
+        },
+        {
+          "pts": 2048,
+          "duration": 1024
+        },
+        {
+          "pts": 3072,
+          "duration": 1024
+        },
+        {
+          "pts": 4096,
+          "duration": 1024
+        },
+        {
+          "pts": 5120,
+          "duration": 1024
+        },
+        {
+          "pts": 6144,
+          "duration": 1024
+        },
+        {
+          "pts": 7168,
+          "duration": 1024
+        },
+        {
+          "pts": 8192,
+          "duration": 1024
+        },
+        {
+          "pts": 9216,
+          "duration": 1024
+        },
+        {
+          "pts": 10240,
+          "duration": 1024
+        },
+        {
+          "pts": 11264,
+          "duration": 1024
+        },
+        {
+          "pts": 12288,
+          "duration": 1024
+        },
+        {
+          "pts": 13312,
+          "duration": 1024
+        },
+        {
+          "pts": 14336,
+          "duration": 1024
+        },
+        {
+          "pts": 15360,
+          "duration": 1024
+        },
+        {
+          "pts": 16384,
+          "duration": 1024
+        },
+        {
+          "pts": 17408,
+          "duration": 1024
+        },
+        {
+          "pts": 18432,
+          "duration": 1024
+        },
+        {
+          "pts": 19456,
+          "duration": 1024
+        },
+        {
+          "pts": 20480,
+          "duration": 1024
+        },
+        {
+          "pts": 21504,
+          "duration": 1024
+        },
+        {
+          "pts": 22528,
+          "duration": 1024
+        },
+        {
+          "pts": 23552,
+          "duration": 1024
+        },
+        {
+          "pts": 24576,
+          "duration": 1024
+        },
+        {
+          "pts": 25600,
+          "duration": 1024
+        },
+        {
+          "pts": 26624,
+          "duration": 1024
+        },
+        {
+          "pts": 27648,
+          "duration": 1024
+        },
+        {
+          "pts": 28672,
+          "duration": 1024
+        },
+        {
+          "pts": 29696,
+          "duration": 1024
+        },
+        {
+          "pts": 30720,
+          "duration": 1024
+        },
+        {
+          "pts": 31744,
+          "duration": 1024
+        },
+        {
+          "pts": 32768,
+          "duration": 1024
+        },
+        {
+          "pts": 33792,
+          "duration": 1024
+        },
+        {
+          "pts": 34816,
+          "duration": 1024
+        },
+        {
+          "pts": 35840,
+          "duration": 1024
+        },
+        {
+          "pts": 36864,
+          "duration": 1024
+        },
+        {
+          "pts": 37888,
+          "duration": 1024
+        },
+        {
+          "pts": 38912,
+          "duration": 1024
+        },
+        {
+          "pts": 39936,
+          "duration": 1024
+        },
+        {
+          "pts": 40960,
+          "duration": 1024
+        },
+        {
+          "pts": 41984,
+          "duration": 1024
+        },
+        {
+          "pts": 43008,
+          "duration": 1024
+        },
+        {
+          "pts": 44032,
+          "duration": 1024
+        },
+        {
+          "pts": 45056,
+          "duration": 1024
+        },
+        {
+          "pts": 46080,
+          "duration": 1024
+        },
+        {
+          "pts": 47104,
+          "duration": 920,
+          "side_data_list": [
+            {
+              "side_data_type": "Skip Samples",
+              "skip_samples": 0,
+              "discard_padding": 104,
+              "skip_reason": 0,
+              "discard_reason": 0
+            }
+          ]
+        }
+      ],
+      "sample_gate": "passed",
+      "presentation_gate": "passed",
+      "errors": [],
+      "outputs": [
+        {
+          "samples": 48024,
+          "sha256": "71c87036d7e9092f388a5873b75e487a172a902bd4a1f015b58a757276694c06",
+          "presentation_span": [
+            "0",
+            "2001/2000"
+          ],
+          "errors": []
+        },
+        {
+          "samples": 48024,
+          "sha256": "dc6d46396a21e00d2ae8c45eb85928f98d81693113e9c85f25ff81850cdf7e45",
+          "presentation_span": [
+            "0",
+            "2001/2000"
+          ],
+          "errors": []
+        }
+      ],
+      "source_unchanged": true
+    },
+    {
+      "name": "aac-six-offset",
+      "source": "/var/folders/ly/b2sk443n0hq1_z9mgf4q8f4w0000gn/T/channelmap-formats-0z6obpig/aac-six-offset.mov",
+      "output": "/var/folders/ly/b2sk443n0hq1_z9mgf4q8f4w0000gn/T/channelmap-formats-0z6obpig/aac-six-offset-routed.mov",
+      "source_sha256": "38496fe772b3ceef77f5dcbde9bed005794d98a0c4eae9eb67c6313bc223d2fb",
+      "generated_frames": 48024,
+      "decoded_frames": 49152,
+      "decoded_interleaved_sha256": "17da31b8cf7874031b5ed2eea5ca67d36f18070135231d4fe90edbdc911dbe10",
+      "reference_sha256": [
+        "80cc0f46ae1c83c243aafc608dccb8dc02a14b8204e9c9a0deab9c8d5d5898d1",
+        "a745546612f5c55fb914981f1c8f30001685771972e8e4657cf0dfedf87a9483"
+      ],
+      "source_presentation_span": [
+        "343/1500",
+        "2501/2000"
+      ],
+      "source_audio_packets": [
+        {
+          "pts": 10976,
+          "duration": 1024
+        },
+        {
+          "pts": 12000,
+          "duration": 1024
+        },
+        {
+          "pts": 13024,
+          "duration": 1024
+        },
+        {
+          "pts": 14048,
+          "duration": 1024
+        },
+        {
+          "pts": 15072,
+          "duration": 1024
+        },
+        {
+          "pts": 16096,
+          "duration": 1024
+        },
+        {
+          "pts": 17120,
+          "duration": 1024
+        },
+        {
+          "pts": 18144,
+          "duration": 1024
+        },
+        {
+          "pts": 19168,
+          "duration": 1024
+        },
+        {
+          "pts": 20192,
+          "duration": 1024
+        },
+        {
+          "pts": 21216,
+          "duration": 1024
+        },
+        {
+          "pts": 22240,
+          "duration": 1024
+        },
+        {
+          "pts": 23264,
+          "duration": 1024
+        },
+        {
+          "pts": 24288,
+          "duration": 1024
+        },
+        {
+          "pts": 25312,
+          "duration": 1024
+        },
+        {
+          "pts": 26336,
+          "duration": 1024
+        },
+        {
+          "pts": 27360,
+          "duration": 1024
+        },
+        {
+          "pts": 28384,
+          "duration": 1024
+        },
+        {
+          "pts": 29408,
+          "duration": 1024
+        },
+        {
+          "pts": 30432,
+          "duration": 1024
+        },
+        {
+          "pts": 31456,
+          "duration": 1024
+        },
+        {
+          "pts": 32480,
+          "duration": 1024
+        },
+        {
+          "pts": 33504,
+          "duration": 1024
+        },
+        {
+          "pts": 34528,
+          "duration": 1024
+        },
+        {
+          "pts": 35552,
+          "duration": 1024
+        },
+        {
+          "pts": 36576,
+          "duration": 1024
+        },
+        {
+          "pts": 37600,
+          "duration": 1024
+        },
+        {
+          "pts": 38624,
+          "duration": 1024
+        },
+        {
+          "pts": 39648,
+          "duration": 1024
+        },
+        {
+          "pts": 40672,
+          "duration": 1024
+        },
+        {
+          "pts": 41696,
+          "duration": 1024
+        },
+        {
+          "pts": 42720,
+          "duration": 1024
+        },
+        {
+          "pts": 43744,
+          "duration": 1024
+        },
+        {
+          "pts": 44768,
+          "duration": 1024
+        },
+        {
+          "pts": 45792,
+          "duration": 1024
+        },
+        {
+          "pts": 46816,
+          "duration": 1024
+        },
+        {
+          "pts": 47840,
+          "duration": 1024
+        },
+        {
+          "pts": 48864,
+          "duration": 1024
+        },
+        {
+          "pts": 49888,
+          "duration": 1024
+        },
+        {
+          "pts": 50912,
+          "duration": 1024
+        },
+        {
+          "pts": 51936,
+          "duration": 1024
+        },
+        {
+          "pts": 52960,
+          "duration": 1024
+        },
+        {
+          "pts": 53984,
+          "duration": 1024
+        },
+        {
+          "pts": 55008,
+          "duration": 1024
+        },
+        {
+          "pts": 56032,
+          "duration": 1024
+        },
+        {
+          "pts": 57056,
+          "duration": 1024
+        },
+        {
+          "pts": 58080,
+          "duration": 1024
+        },
+        {
+          "pts": 59104,
+          "duration": 920
+        }
+      ],
+      "sample_gate": "passed",
+      "presentation_gate": "failed",
+      "errors": [
+        "audio0_presentation_span",
+        "audio1_presentation_span"
+      ],
+      "outputs": [
+        {
+          "samples": 49152,
+          "sha256": "80cc0f46ae1c83c243aafc608dccb8dc02a14b8204e9c9a0deab9c8d5d5898d1",
+          "presentation_span": [
+            "343/1500",
+            "1879/1500"
+          ],
+          "errors": [
+            "presentation_span"
+          ]
+        },
+        {
+          "samples": 49152,
+          "sha256": "a745546612f5c55fb914981f1c8f30001685771972e8e4657cf0dfedf87a9483",
+          "presentation_span": [
+            "343/1500",
+            "1879/1500"
+          ],
+          "errors": [
+            "presentation_span"
+          ]
+        }
+      ],
+      "source_unchanged": true
+    }
+  ],
+  "negative_controls": [
+    {
+      "fixture": "pcm32-eight",
+      "name": "reversed",
+      "errors": [
+        "audio0_sample_values",
+        "audio1_sample_values"
+      ]
+    },
+    {
+      "fixture": "pcm32-eight",
+      "name": "reset_pts",
+      "errors": [
+        "audio0_presentation_span",
+        "audio1_presentation_span"
+      ]
+    },
+    {
+      "fixture": "pcm32-eight",
+      "name": "forced_float32",
+      "errors": [
+        "audio0_sample_values",
+        "audio1_sample_values"
+      ]
+    },
+    {
+      "fixture": "pcm24-six",
+      "name": "reversed",
+      "errors": [
+        "audio0_sample_values",
+        "audio1_sample_values"
+      ]
+    },
+    {
+      "fixture": "pcm24-six",
+      "name": "reset_pts",
+      "errors": [
+        "audio0_presentation_span",
+        "audio1_presentation_span"
+      ]
+    },
+    {
+      "fixture": "aac-six-zero",
+      "name": "reversed",
+      "errors": [
+        "audio0_sample_values",
+        "audio1_sample_values"
+      ]
+    },
+    {
+      "fixture": "aac-six-zero",
+      "name": "tail_removed",
+      "errors": [
+        "audio0_sample_values",
+        "audio0_sample_count",
+        "audio0_presentation_span",
+        "audio1_sample_values",
+        "audio1_sample_count",
+        "audio1_presentation_span"
+      ]
+    },
+    {
+      "fixture": "aac-six-offset",
+      "name": "reversed",
+      "errors": [
+        "audio0_sample_values",
+        "audio0_presentation_span",
+        "audio1_sample_values",
+        "audio1_presentation_span"
+      ]
+    },
+    {
+      "fixture": "aac-six-offset",
+      "name": "reset_pts",
+      "errors": [
+        "audio0_presentation_span",
+        "audio1_presentation_span"
+      ]
+    },
+    {
+      "fixture": "aac-six-offset",
+      "name": "tail_removed",
+      "errors": [
+        "audio0_sample_values",
+        "audio0_sample_count",
+        "audio0_presentation_span",
+        "audio1_sample_values",
+        "audio1_sample_count",
+        "audio1_presentation_span"
+      ]
+    }
+  ],
+  "ffmpeg_version": "ffmpeg version 9.0.1 Copyright (c) 2000-2026 the FFmpeg developers\nbuilt with Apple clang version 21.0.0 (clang-2100.1.1.101)\nconfiguration: --prefix=/opt/homebrew/Cellar/ffmpeg/9.0.1_1 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags= --enable-ffplay --enable-gpl --enable-libsvtav1 --enable-libopus --enable-libx264 --enable-libmp3lame --enable-libdav1d --enable-libvmaf --enable-libvpx --enable-libx265 --enable-openssl --enable-videotoolbox --enable-audiotoolbox --enable-neon\nlibavutil      61.  1.101 / 61.  1.101\nlibavcodec     63.  1.101 / 63.  1.101\nlibavformat    63.  1.101 / 63.  1.101\nlibavdevice    63.  1.101 / 63.  1.101\nlibavfilter    12.  1.101 / 12.  1.101\nlibswscale     10.  1.101 / 10.  1.101\nlibswresample   7.  1.101 /  7.  1.101\n\nExiting with exit code 0\n",
+  "ffprobe_version": "ffprobe version 9.0.1 Copyright (c) 2007-2026 the FFmpeg developers\nbuilt with Apple clang version 21.0.0 (clang-2100.1.1.101)\nconfiguration: --prefix=/opt/homebrew/Cellar/ffmpeg/9.0.1_1 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags= --enable-ffplay --enable-gpl --enable-libsvtav1 --enable-libopus --enable-libx264 --enable-libmp3lame --enable-libdav1d --enable-libvmaf --enable-libvpx --enable-libx265 --enable-openssl --enable-videotoolbox --enable-audiotoolbox --enable-neon\nlibavutil      61.  1.101 / 61.  1.101\nlibavcodec     63.  1.101 / 63.  1.101\nlibavformat    63.  1.101 / 63.  1.101\nlibavdevice    63.  1.101 / 63.  1.101\nlibavfilter    12.  1.101 / 12.  1.101\nlibswscale     10.  1.101 / 10.  1.101\nlibswresample   7.  1.101 /  7.  1.101\n",
+  "executable_sha256": {
+    "ffmpeg": "9f5ddd4f8b36eb07b0c5d60ab6ea1e618bedd70bc45feab82b4dc23be1596ad1",
+    "ffprobe": "0ecd5e1affb1466b129b4f65bee261e9ab625c4d4a2e7c3e9089f63d44808605"
+  },
+  "harness_sha256": "2d6b6fb53272335d4e568db9f1783835386e5a3cccf4dfde1f851b23dfb68cb6",
+  "pcm32_non_float32_exact_samples": 48024,
+  "all_media_gates_passed": false
+}

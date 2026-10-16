@@ -1,0 +1,8 @@
+exact: success frames=2400 channels=2 settings=["AVLinearPCMIsBigEndianKey": 0, "AVNumberOfChannelsKey": 2, "AVLinearPCMBitDepthKey": 24, "AVLinearPCMIsFloatKey": 0, "AVSampleRateKey": 48000, "AVLinearPCMIsNonInterleaved": 0, "AVFormatIDKey": 1819304813]
+empty: error emptySelection
+pastEnd: error emptySelection
+overEnd: success frames=1200 channels=2 settings=["AVLinearPCMIsNonInterleaved": 0, "AVLinearPCMIsBigEndianKey": 0, "AVLinearPCMBitDepthKey": 24, "AVNumberOfChannelsKey": 2, "AVFormatIDKey": 1819304813, "AVSampleRateKey": 48000, "AVLinearPCMIsFloatKey": 0]
+fractional: success frames=2400 channels=2 settings=["AVNumberOfChannelsKey": 2, "AVFormatIDKey": 1819304813, "AVSampleRateKey": 48000, "AVLinearPCMIsFloatKey": 0, "AVLinearPCMBitDepthKey": 24, "AVLinearPCMIsNonInterleaved": 0, "AVLinearPCMIsBigEndianKey": 0]
+exact: PCM bytes match source[1200:3600]=True; WAV fmt=(1, 2, 48000, 288000, 6, 24); data bytes=14400
+fractional: PCM bytes match source[1200:3600]=True; WAV fmt=(1, 2, 48000, 288000, 6, 24); data bytes=14400
+overEnd: PCM bytes match source[3600:4800]=True; WAV fmt=(1, 2, 48000, 288000, 6, 24); data bytes=7200

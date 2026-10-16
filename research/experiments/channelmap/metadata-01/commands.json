@@ -1,0 +1,99 @@
+[
+  {
+    "argv": [
+      "/opt/homebrew/bin/ffmpeg",
+      "-version"
+    ],
+    "exit": 0,
+    "stdout_sha256": "4db45f7e79a457642a487a65a67bfe6be66b0cee1bd461fa5b432b373cdfbc0e"
+  },
+  {
+    "argv": [
+      "/opt/homebrew/bin/ffprobe",
+      "-version"
+    ],
+    "exit": 0,
+    "stdout_sha256": "abd50a4468578ece7323bce6d220a2c909c5a38ce7328929947dda86a8bfab41"
+  },
+  {
+    "argv": [
+      "/opt/homebrew/bin/ffmpeg",
+      "-nostdin",
+      "-hide_banner",
+      "-v",
+      "error",
+      "-n",
+      "-f",
+      "lavfi",
+      "-i",
+      "testsrc2=size=160x90:rate=25:duration=2",
+      "-i",
+      "/var/folders/ly/b2sk443n0hq1_z9mgf4q8f4w0000gn/T/channelmap-metadata-eusdzyvh/input.wav",
+      "-map",
+      "0:v",
+      "-map",
+      "1:a",
+      "-c:v",
+      "prores_ks",
+      "-profile:v",
+      "0",
+      "-pix_fmt",
+      "yuv422p10le",
+      "-color_primaries",
+      "bt2020",
+      "-color_trc",
+      "smpte2084",
+      "-colorspace",
+      "bt2020nc",
+      "-color_range",
+      "tv",
+      "-c:a",
+      "pcm_s24le",
+      "-timecode",
+      "01:02:03:04",
+      "/var/folders/ly/b2sk443n0hq1_z9mgf4q8f4w0000gn/T/channelmap-metadata-eusdzyvh/base.mov"
+    ],
+    "exit": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/opt/homebrew/bin/ffmpeg",
+      "-nostdin",
+      "-hide_banner",
+      "-v",
+      "error",
+      "-n",
+      "-display_rotation:v:0",
+      "90",
+      "-i",
+      "/var/folders/ly/b2sk443n0hq1_z9mgf4q8f4w0000gn/T/channelmap-metadata-eusdzyvh/base.mov",
+      "-map",
+      "0:v",
+      "-map",
+      "0:a",
+      "-c",
+      "copy",
+      "/var/folders/ly/b2sk443n0hq1_z9mgf4q8f4w0000gn/T/channelmap-metadata-eusdzyvh/source.mov"
+    ],
+    "exit": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/opt/homebrew/bin/ffprobe",
+      "-v",
+      "error",
+      "-show_streams",
+      "-show_format",
+      "-show_packets",
+      "-show_data_hash",
+      "sha256",
+      "-of",
+      "json",
+      "/var/folders/ly/b2sk443n0hq1_z9mgf4q8f4w0000gn/T/channelmap-metadata-eusdzyvh/source.mov"
+    ],
+    "exit": 0,
+    "stdout_sha256": "a80daa76785d5f6ae12bb10f3baffdf8fe68d2cb12aefbfcfd054b0daac8e269"
+  }
+]

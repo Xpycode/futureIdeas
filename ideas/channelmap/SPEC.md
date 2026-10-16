@@ -1,6 +1,6 @@
 # ChannelMap — Product and implementation specification
 
-**Version:** 0.1 · 15 October 2026 · **Status:** proposed build specification
+**Version:** 0.2 · 16 October 2026 · **Status:** proposed build specification
 
 ## 1. Product decision
 
@@ -116,18 +116,21 @@ The export plan (§4) shows one badge per output stream and repeats the result i
 | Situation | Action | Badge |
 |---|---|---|
 | Video stream(s) | Always stream copy; never a fallback to encoding | `Copy` |
-| Whole audio stream retained unchanged | Stream copy | `Copy` |
+| Whole PCM audio stream retained unchanged, supported by destination | Stream copy | `Copy` |
+| Whole compressed audio stream retained | Decode and write supported PCM; compressed passthrough deferred beyond MVP | `Decoded to PCM` |
 | PCM source; channels split, reordered or paired at the same rate | Decode and rewrite as PCM at the source bit depth and sample rate | `PCM rewrite` (sample-exact; verified per §7) |
 | Compressed source (e.g. AAC); channels split, reordered or paired | Decode and write PCM; no new lossy generation | `Decoded to PCM` |
 | Sources with different sample rates in one output | Blocked in MVP; a later resampling option is never sample-exact | `Resampled` (later) |
 | Gain or polarity (later) | Process in floating point, dither when reducing to integer | `Processed` (later; excluded from hash comparison) |
+
+PCM-only clarification (16 October 2026): copying is permitted only when the retained audio is already supported PCM. This resolves the inherited whole-stream-copy example against the MVP contract; [B6 evidence and limits](../../research/2026-10-16-channelmap-routing-results.md) do not validate compressed-input conversion.
 
 ### 9.2 FFmpeg command construction (illustrative)
 
 Verify every pattern against the pinned build in the feasibility gate. Arguments are arrays (§5); the strings below are only for readability.
 
 - Always: `-map 0:v -c:v copy`, `-map_metadata 0`, and carry the start timecode. For MOV, check whether the `tmcd` track survives stream copy or must be recreated with `-timecode` from the probe.
-- Retain a whole stream: `-map 0:a:N -c:a:K copy`.
+- Retain a whole supported PCM stream: `-map 0:a:N -c:a:K copy`. For a compressed source, explicitly encode that output as supported PCM instead; compressed passthrough is outside MVP.
 - One channel to a mono WAV: `[0:a:0]pan=mono|c0=c2[out]`, then `-map [out] -c:a pcm_s24le`.
 - Swap stereo: `[0:a:0]pan=stereo|c0=c1|c1=c0[out]`.
 - Pair two mono streams into stereo: `[0:a:0][0:a:1]amerge=inputs=2,pan=stereo|c0=c0|c1=c1[out]` (or the `join` filter with an explicit channel map).

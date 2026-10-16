@@ -1,0 +1,379 @@
+{
+  "status": "passed",
+  "cases": [
+    {
+      "name": "aac-six-zero",
+      "source_sha256": "1fe3d954165370c9d8064d096831303b7cb0d1d61144841c4c41f44641b42a19",
+      "atoms": {
+        "movie_scale": 48000,
+        "media_scale": 48000,
+        "entries": [
+          {
+            "duration": 48024,
+            "media_time": 1024,
+            "rate": [
+              1,
+              0
+            ],
+            "offset": 173322
+          }
+        ],
+        "version": 0
+      },
+      "presentation_start_sample": 0,
+      "media_start_sample": 1024,
+      "presentation_samples": 48024,
+      "raw_frames": 49152,
+      "normal_frames": 48024,
+      "raw_sha256": "17da31b8cf7874031b5ed2eea5ca67d36f18070135231d4fe90edbdc911dbe10",
+      "reference_sha256": [
+        "71c87036d7e9092f388a5873b75e487a172a902bd4a1f015b58a757276694c06",
+        "dc6d46396a21e00d2ae8c45eb85928f98d81693113e9c85f25ff81850cdf7e45"
+      ],
+      "tail_outside_edit": 104,
+      "variants": [
+        {
+          "name": "bounded",
+          "errors": [],
+          "sample_sha256": [
+            "71c87036d7e9092f388a5873b75e487a172a902bd4a1f015b58a757276694c06",
+            "dc6d46396a21e00d2ae8c45eb85928f98d81693113e9c85f25ff81850cdf7e45"
+          ]
+        },
+        {
+          "name": "head_plus_one",
+          "errors": [
+            "0:samples",
+            "0:count",
+            "0:atom_timeline",
+            "0:probe_timeline",
+            "1:samples",
+            "1:count",
+            "1:atom_timeline",
+            "1:probe_timeline"
+          ],
+          "sample_sha256": [
+            "3d4f5d1d69225c24753e29dcaca49ac4e009106b278e04e378345bf9a030fd08",
+            "c21573f80302ef2752558c265aa97cfbade789dd1f8a5f2ef98bd4025f92e133"
+          ]
+        },
+        {
+          "name": "tail_minus_one",
+          "errors": [
+            "0:samples",
+            "0:count",
+            "0:atom_timeline",
+            "0:probe_timeline",
+            "1:samples",
+            "1:count",
+            "1:atom_timeline",
+            "1:probe_timeline"
+          ],
+          "sample_sha256": [
+            "0c47e0035ef95aedf5aad015862fc6f13297f8ed76d9d891f94af0190e0bc4aa",
+            "6c1d5247497dc5155ca5361c29ee85743bb9c6df2fb87c117ef3412f6abae0f8"
+          ]
+        },
+        {
+          "name": "tail_plus_one",
+          "errors": [
+            "0:samples",
+            "0:count",
+            "0:atom_timeline",
+            "0:probe_timeline",
+            "1:samples",
+            "1:count",
+            "1:atom_timeline",
+            "1:probe_timeline"
+          ],
+          "sample_sha256": [
+            "0881a5c0eb84136a9ce19d332be1a1fef11bb784698d3bd1af287ea18dca2158",
+            "ea683f0da02d599270ddc856f2781058aba5a55e3f8bdfa3db081d40de88bbf6"
+          ]
+        },
+        {
+          "name": "shift_one",
+          "errors": [
+            "0:atom_timeline",
+            "0:probe_timeline",
+            "0:packet_size_duration",
+            "1:atom_timeline",
+            "1:probe_timeline",
+            "1:packet_size_duration"
+          ],
+          "sample_sha256": [
+            "71c87036d7e9092f388a5873b75e487a172a902bd4a1f015b58a757276694c06",
+            "dc6d46396a21e00d2ae8c45eb85928f98d81693113e9c85f25ff81850cdf7e45"
+          ]
+        },
+        {
+          "name": "reversed",
+          "errors": [
+            "0:samples",
+            "1:samples"
+          ],
+          "sample_sha256": [
+            "dc6d46396a21e00d2ae8c45eb85928f98d81693113e9c85f25ff81850cdf7e45",
+            "71c87036d7e9092f388a5873b75e487a172a902bd4a1f015b58a757276694c06"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "aac-six-offset",
+      "source_sha256": "38496fe772b3ceef77f5dcbde9bed005794d98a0c4eae9eb67c6313bc223d2fb",
+      "atoms": {
+        "movie_scale": 48000,
+        "media_scale": 48000,
+        "entries": [
+          {
+            "duration": 10976,
+            "media_time": -1,
+            "rate": [
+              1,
+              0
+            ],
+            "offset": 173338
+          },
+          {
+            "duration": 49048,
+            "media_time": 0,
+            "rate": [
+              1,
+              0
+            ],
+            "offset": 173350
+          }
+        ],
+        "version": 0
+      },
+      "presentation_start_sample": 10976,
+      "media_start_sample": 0,
+      "presentation_samples": 49048,
+      "raw_frames": 49152,
+      "normal_frames": 49152,
+      "raw_sha256": "17da31b8cf7874031b5ed2eea5ca67d36f18070135231d4fe90edbdc911dbe10",
+      "reference_sha256": [
+        "abfb6d97ebebc15e5a09fc5960a1c0fb52c4ff9fd4f7a63b896ed313344c548c",
+        "fe3bd953a450706ec1a21a1a8feea5152f36fa23a3a30d72105fe43c8b260dd6"
+      ],
+      "tail_outside_edit": 104,
+      "variants": [
+        {
+          "name": "bounded",
+          "errors": [],
+          "sample_sha256": [
+            "abfb6d97ebebc15e5a09fc5960a1c0fb52c4ff9fd4f7a63b896ed313344c548c",
+            "fe3bd953a450706ec1a21a1a8feea5152f36fa23a3a30d72105fe43c8b260dd6"
+          ]
+        },
+        {
+          "name": "head_plus_one",
+          "errors": [
+            "0:samples",
+            "0:count",
+            "0:atom_timeline",
+            "0:probe_timeline",
+            "1:samples",
+            "1:count",
+            "1:atom_timeline",
+            "1:probe_timeline"
+          ],
+          "sample_sha256": [
+            "169c42b28e38f715636f88863676eb92ba652a2743c2eac720b5c119a520a196",
+            "bef471a1ebe21c4ecf0215fda8ae4f22feb7d873c109b083d79f714f03e05584"
+          ]
+        },
+        {
+          "name": "tail_minus_one",
+          "errors": [
+            "0:samples",
+            "0:count",
+            "0:atom_timeline",
+            "0:probe_timeline",
+            "1:samples",
+            "1:count",
+            "1:atom_timeline",
+            "1:probe_timeline"
+          ],
+          "sample_sha256": [
+            "8853028a0dacb9655b962116f5deee8e407995b86ff2dd55498471d0dcf4caf8",
+            "81c144ffeeb9887eb6ce80561de81e52104fd4c94893e84fe9a7346c6192b54e"
+          ]
+        },
+        {
+          "name": "tail_plus_one",
+          "errors": [
+            "0:samples",
+            "0:count",
+            "0:atom_timeline",
+            "0:probe_timeline",
+            "1:samples",
+            "1:count",
+            "1:atom_timeline",
+            "1:probe_timeline"
+          ],
+          "sample_sha256": [
+            "1931475dd4b8caa85222e3e5c673a02b652b2bea81fd943fc5b7208c347c1cc9",
+            "8ce3b229c1e94912f9e4225471ff15963e2466052dd3336b091cfb08d4d19867"
+          ]
+        },
+        {
+          "name": "shift_one",
+          "errors": [
+            "0:atom_timeline",
+            "0:probe_timeline",
+            "1:atom_timeline",
+            "1:probe_timeline"
+          ],
+          "sample_sha256": [
+            "abfb6d97ebebc15e5a09fc5960a1c0fb52c4ff9fd4f7a63b896ed313344c548c",
+            "fe3bd953a450706ec1a21a1a8feea5152f36fa23a3a30d72105fe43c8b260dd6"
+          ]
+        },
+        {
+          "name": "reversed",
+          "errors": [
+            "0:samples",
+            "1:samples"
+          ],
+          "sample_sha256": [
+            "fe3bd953a450706ec1a21a1a8feea5152f36fa23a3a30d72105fe43c8b260dd6",
+            "abfb6d97ebebc15e5a09fc5960a1c0fb52c4ff9fd4f7a63b896ed313344c548c"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "aac-explicit-edit",
+      "source_sha256": "27db24f888e809911e94614fd432127348841a312307734eddaa15028305204c",
+      "atoms": {
+        "movie_scale": 48000,
+        "media_scale": 48000,
+        "entries": [
+          {
+            "duration": 12000,
+            "media_time": -1,
+            "rate": [
+              1,
+              0
+            ],
+            "offset": 173338
+          },
+          {
+            "duration": 47000,
+            "media_time": 1061,
+            "rate": [
+              1,
+              0
+            ],
+            "offset": 173350
+          }
+        ],
+        "version": 0
+      },
+      "presentation_start_sample": 12000,
+      "media_start_sample": 1061,
+      "presentation_samples": 47000,
+      "raw_frames": 49152,
+      "normal_frames": 47067,
+      "raw_sha256": "17da31b8cf7874031b5ed2eea5ca67d36f18070135231d4fe90edbdc911dbe10",
+      "reference_sha256": [
+        "97aab15240d71e3266357d906d3c63b899ee5457aff09e7d3bd940ffb8979b24",
+        "9cb220708816d299790854d9949d709eb8ed4a120d4212063109a787f24ef231"
+      ],
+      "tail_outside_edit": 1091,
+      "variants": [
+        {
+          "name": "bounded",
+          "errors": [],
+          "sample_sha256": [
+            "97aab15240d71e3266357d906d3c63b899ee5457aff09e7d3bd940ffb8979b24",
+            "9cb220708816d299790854d9949d709eb8ed4a120d4212063109a787f24ef231"
+          ]
+        },
+        {
+          "name": "head_plus_one",
+          "errors": [
+            "0:samples",
+            "0:count",
+            "0:atom_timeline",
+            "0:probe_timeline",
+            "1:samples",
+            "1:count",
+            "1:atom_timeline",
+            "1:probe_timeline"
+          ],
+          "sample_sha256": [
+            "438cd279e96d49d735f338ae554dd4f75fc9d1394adccdb0b316773d16b3e68e",
+            "7bcbf1b3d37490ece554d40029bc9b079e57e6be6608da38c363fce297e18064"
+          ]
+        },
+        {
+          "name": "tail_minus_one",
+          "errors": [
+            "0:samples",
+            "0:count",
+            "0:atom_timeline",
+            "0:probe_timeline",
+            "1:samples",
+            "1:count",
+            "1:atom_timeline",
+            "1:probe_timeline"
+          ],
+          "sample_sha256": [
+            "56478fb1664eb545b71e358a1cbd661aab09fa067c52c7d766870cd7735353f0",
+            "41ecf9324d660b3066225ded6f900fa71a948952b5953721002dd81293865122"
+          ]
+        },
+        {
+          "name": "tail_plus_one",
+          "errors": [
+            "0:samples",
+            "0:count",
+            "0:atom_timeline",
+            "0:probe_timeline",
+            "1:samples",
+            "1:count",
+            "1:atom_timeline",
+            "1:probe_timeline"
+          ],
+          "sample_sha256": [
+            "56b96419e688573ae66b6f28fbd8839e6a003a20514af871ea2e7e6affba8dc7",
+            "19807a48505c3ae527fc35f63847854a5b82d1618c406a24e147b9ccef685e8b"
+          ]
+        },
+        {
+          "name": "shift_one",
+          "errors": [
+            "0:atom_timeline",
+            "0:probe_timeline",
+            "1:atom_timeline",
+            "1:probe_timeline"
+          ],
+          "sample_sha256": [
+            "97aab15240d71e3266357d906d3c63b899ee5457aff09e7d3bd940ffb8979b24",
+            "9cb220708816d299790854d9949d709eb8ed4a120d4212063109a787f24ef231"
+          ]
+        },
+        {
+          "name": "reversed",
+          "errors": [
+            "0:samples",
+            "1:samples"
+          ],
+          "sample_sha256": [
+            "9cb220708816d299790854d9949d709eb8ed4a120d4212063109a787f24ef231",
+            "97aab15240d71e3266357d906d3c63b899ee5457aff09e7d3bd940ffb8979b24"
+          ]
+        }
+      ]
+    }
+  ],
+  "ffmpeg_version": "ffmpeg version 9.0.1 Copyright (c) 2000-2026 the FFmpeg developers\nbuilt with Apple clang version 21.0.0 (clang-2100.1.1.101)\nconfiguration: --prefix=/opt/homebrew/Cellar/ffmpeg/9.0.1_1 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags= --enable-ffplay --enable-gpl --enable-libsvtav1 --enable-libopus --enable-libx264 --enable-libmp3lame --enable-libdav1d --enable-libvmaf --enable-libvpx --enable-libx265 --enable-openssl --enable-videotoolbox --enable-audiotoolbox --enable-neon\nlibavutil      61.  1.101 / 61.  1.101\nlibavcodec     63.  1.101 / 63.  1.101\nlibavformat    63.  1.101 / 63.  1.101\nlibavdevice    63.  1.101 / 63.  1.101\nlibavfilter    12.  1.101 / 12.  1.101\nlibswscale     10.  1.101 / 10.  1.101\nlibswresample   7.  1.101 /  7.  1.101\n\nExiting with exit code 0\n",
+  "harness_sha256": "b2b866ccff44579becf6d6e17858ec965e85b72a7f4865cf08fb59161d58b41f",
+  "executable_sha256": {
+    "/opt/homebrew/bin/ffmpeg": "9f5ddd4f8b36eb07b0c5d60ab6ea1e618bedd70bc45feab82b4dc23be1596ad1",
+    "/opt/homebrew/bin/ffprobe": "0ecd5e1affb1466b129b4f65bee261e9ab625c4d4a2e7c3e9089f63d44808605"
+  }
+}

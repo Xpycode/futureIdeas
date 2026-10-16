@@ -1,0 +1,61 @@
+{
+  "status": "passed",
+  "scratch": "/var/folders/ly/b2sk443n0hq1_z9mgf4q8f4w0000gn/T/channelmap-b7-lifecycle-c9oe66sx",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "cases": [
+    {
+      "name": "existing_destination",
+      "diagnostic": "EEXIST",
+      "destination_unchanged": true,
+      "partial_retained": true
+    },
+    {
+      "name": "creation_after_preflight",
+      "destination_unchanged": true
+    },
+    {
+      "name": "successful_publication",
+      "partial_removed": true,
+      "content_exact": true
+    },
+    {
+      "name": "later_output_failure",
+      "earlier_output_remains": true,
+      "job_atomic": false
+    },
+    {
+      "name": "ffmpeg_filter_failure",
+      "exit": 8,
+      "published": false,
+      "partial_cleaned": true
+    },
+    {
+      "name": "missing_helper",
+      "diagnostic": "ENOENT",
+      "published": false
+    },
+    {
+      "name": "injected_ENOSPC",
+      "level": "in-process injected error after partial write",
+      "published": false,
+      "partial_cleaned": true
+    },
+    {
+      "name": "cancel_active_ffmpeg",
+      "bytes_before_cancel": 262144,
+      "latency_seconds": 0.042754124966450036,
+      "forced_kill": false,
+      "child_reaped": true,
+      "published": false,
+      "partial_cleaned": true
+    },
+    {
+      "name": "precommit_cancel_guard",
+      "level": "in-process cancellation flag",
+      "published": false
+    }
+  ],
+  "version": "ffmpeg version 9.0.1 Copyright (c) 2000-2026 the FFmpeg developers\nbuilt with Apple clang version 21.0.0 (clang-2100.1.1.101)\nconfiguration: --prefix=/opt/homebrew/Cellar/ffmpeg/9.0.1_1 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags= --enable-ffplay --enable-gpl --enable-libsvtav1 --enable-libopus --enable-libx264 --enable-libmp3lame --enable-libdav1d --enable-libvmaf --enable-libvpx --enable-libx265 --enable-openssl --enable-videotoolbox --enable-audiotoolbox --enable-neon\nlibavutil      61.  1.101 / 61.  1.101\nlibavcodec     63.  1.101 / 63.  1.101\nlibavformat    63.  1.101 / 63.  1.101\nlibavdevice    63.  1.101 / 63.  1.101\nlibavfilter    12.  1.101 / 12.  1.101\nlibswscale     10.  1.101 / 10.  1.101\nlibswresample   7.  1.101 /  7.  1.101\n\nExiting with exit code 0\n",
+  "ffmpeg_sha256": "9f5ddd4f8b36eb07b0c5d60ab6ea1e618bedd70bc45feab82b4dc23be1596ad1",
+  "harness_sha256": "4f33855b83090c810b91edb07f5655750527e5f3f3c880aa870611cc0eda9ed1"
+}

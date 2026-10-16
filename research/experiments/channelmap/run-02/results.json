@@ -1,0 +1,179 @@
+{
+  "status": "passed",
+  "scratch": "/var/folders/ly/b2sk443n0hq1_z9mgf4q8f4w0000gn/T/channelmap-cm-e1-1zaaqmhb",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "positive": [
+    {
+      "case": "single",
+      "output": "/var/folders/ly/b2sk443n0hq1_z9mgf4q8f4w0000gn/T/channelmap-cm-e1-1zaaqmhb/route-0.mov",
+      "layout_from_probe": null,
+      "audio_offsets_seconds": [
+        "1/4",
+        "1/4"
+      ],
+      "samples_per_channel": [
+        48000,
+        48000
+      ],
+      "pcm_sha256": [
+        "7929e5cd809a04053aa298f76305031cd35b2e30ac8a8772de197b54a8bdb7d7",
+        "9acb4b099e64e418c03911099ee68e0759b12d5b73a4fb93157f6d3568a1ed35"
+      ],
+      "video_packets": 50,
+      "video_span_seconds": [
+        "0",
+        "2"
+      ],
+      "wav_samples_exact": true,
+      "wav_checks": [
+        {
+          "channel_index": 4,
+          "samples": 48000,
+          "pcm_sha256": "7929e5cd809a04053aa298f76305031cd35b2e30ac8a8772de197b54a8bdb7d7"
+        },
+        {
+          "channel_index": 1,
+          "samples": 48000,
+          "pcm_sha256": "9acb4b099e64e418c03911099ee68e0759b12d5b73a4fb93157f6d3568a1ed35"
+        }
+      ],
+      "source_unchanged": true
+    },
+    {
+      "case": "multi-second-stream",
+      "output": "/var/folders/ly/b2sk443n0hq1_z9mgf4q8f4w0000gn/T/channelmap-cm-e1-1zaaqmhb/route-1.mov",
+      "layout_from_probe": null,
+      "audio_offsets_seconds": [
+        "1/4",
+        "1/4"
+      ],
+      "samples_per_channel": [
+        48000,
+        48000
+      ],
+      "pcm_sha256": [
+        "99fb453a0a1384d033d1029e415bbe92af1f1238f87685351fca664aaa7e0612",
+        "052888d250cf6c71239dd4406157f88c2aac72e75e591e0913d539bf808d70bb"
+      ],
+      "video_packets": 50,
+      "video_span_seconds": [
+        "0",
+        "2"
+      ],
+      "wav_samples_exact": true,
+      "wav_checks": [
+        {
+          "channel_index": 4,
+          "samples": 48000,
+          "pcm_sha256": "99fb453a0a1384d033d1029e415bbe92af1f1238f87685351fca664aaa7e0612"
+        },
+        {
+          "channel_index": 1,
+          "samples": 48000,
+          "pcm_sha256": "052888d250cf6c71239dd4406157f88c2aac72e75e591e0913d539bf808d70bb"
+        }
+      ],
+      "source_unchanged": true
+    }
+  ],
+  "negative": [
+    {
+      "name": "reversed",
+      "rejected_by": [
+        "audio0_sample_values",
+        "audio1_sample_values"
+      ]
+    },
+    {
+      "name": "duplicated",
+      "rejected_by": [
+        "audio1_sample_values"
+      ]
+    },
+    {
+      "name": "off_by_one",
+      "rejected_by": [
+        "audio0_sample_values",
+        "audio1_sample_values"
+      ]
+    },
+    {
+      "name": "reset_timestamps",
+      "rejected_by": [
+        "audio0_offset",
+        "audio0_edit_list",
+        "audio1_offset",
+        "audio1_edit_list"
+      ]
+    },
+    {
+      "name": "wrong_absolute_stream",
+      "rejected_by": [
+        "audio0_sample_values",
+        "audio1_sample_values"
+      ]
+    },
+    {
+      "name": "one_sample_changed",
+      "rejected_by": [
+        "sample_values"
+      ]
+    },
+    {
+      "name": "one_sample_removed",
+      "rejected_by": [
+        "sample_count",
+        "sample_values"
+      ]
+    },
+    {
+      "name": "video_packet_dropped",
+      "rejected_by": [
+        "video_payload_sequence",
+        "video_timeline"
+      ]
+    },
+    {
+      "name": "absent_channel",
+      "rejected_by": [
+        "channel_absent"
+      ],
+      "level": "plan preflight"
+    },
+    {
+      "name": "topology_mismatch",
+      "rejected_by": [
+        "topology_changed"
+      ],
+      "level": "plan preflight"
+    },
+    {
+      "name": "changed_snapshot",
+      "rejected_by": [
+        "source_snapshot_changed"
+      ],
+      "level": "actual generated-source copy modified after snapshot"
+    },
+    {
+      "name": "interior_packet_shift_1/48000",
+      "rejected_by": [
+        "audio_continuity"
+      ],
+      "level": "oracle-only timestamp mutation"
+    },
+    {
+      "name": "interior_packet_shift_-1/48000",
+      "rejected_by": [
+        "audio_continuity"
+      ],
+      "level": "oracle-only timestamp mutation"
+    }
+  ],
+  "ffmpeg_version": "ffmpeg version 9.0.1 Copyright (c) 2000-2026 the FFmpeg developers\nbuilt with Apple clang version 21.0.0 (clang-2100.1.1.101)\nconfiguration: --prefix=/opt/homebrew/Cellar/ffmpeg/9.0.1_1 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags= --enable-ffplay --enable-gpl --enable-libsvtav1 --enable-libopus --enable-libx264 --enable-libmp3lame --enable-libdav1d --enable-libvmaf --enable-libvpx --enable-libx265 --enable-openssl --enable-videotoolbox --enable-audiotoolbox --enable-neon\nlibavutil      61.  1.101 / 61.  1.101\nlibavcodec     63.  1.101 / 63.  1.101\nlibavformat    63.  1.101 / 63.  1.101\nlibavdevice    63.  1.101 / 63.  1.101\nlibavfilter    12.  1.101 / 12.  1.101\nlibswscale     10.  1.101 / 10.  1.101\nlibswresample   7.  1.101 /  7.  1.101\n\nExiting with exit code 0\n",
+  "ffprobe_version": "ffprobe version 9.0.1 Copyright (c) 2007-2026 the FFmpeg developers\nbuilt with Apple clang version 21.0.0 (clang-2100.1.1.101)\nconfiguration: --prefix=/opt/homebrew/Cellar/ffmpeg/9.0.1_1 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags= --enable-ffplay --enable-gpl --enable-libsvtav1 --enable-libopus --enable-libx264 --enable-libmp3lame --enable-libdav1d --enable-libvmaf --enable-libvpx --enable-libx265 --enable-openssl --enable-videotoolbox --enable-audiotoolbox --enable-neon\nlibavutil      61.  1.101 / 61.  1.101\nlibavcodec     63.  1.101 / 63.  1.101\nlibavformat    63.  1.101 / 63.  1.101\nlibavdevice    63.  1.101 / 63.  1.101\nlibavfilter    12.  1.101 / 12.  1.101\nlibswscale     10.  1.101 / 10.  1.101\nlibswresample   7.  1.101 /  7.  1.101\n",
+  "executable_sha256": {
+    "ffmpeg": "9f5ddd4f8b36eb07b0c5d60ab6ea1e618bedd70bc45feab82b4dc23be1596ad1",
+    "ffprobe": "0ecd5e1affb1466b129b4f65bee261e9ab625c4d4a2e7c3e9089f63d44808605"
+  },
+  "harness_sha256": "aa06db57b54ce1098d870fa89032c080044473e22ce7809b5d8b22c3e7f7881e"
+}

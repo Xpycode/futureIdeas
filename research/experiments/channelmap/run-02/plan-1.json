@@ -1,0 +1,16 @@
+{
+  "source": "/var/folders/ly/b2sk443n0hq1_z9mgf4q8f4w0000gn/T/channelmap-cm-e1-1zaaqmhb/multi.mov",
+  "sha256": "5c3247d2468e1a7ebcc5b496f7366f98b56daa2c34aa081f1936611f5275aa04",
+  "size": 2429809,
+  "absolute_stream_index": 2,
+  "channels": [
+    4,
+    1
+  ],
+  "expected_channels": 8,
+  "sample_rate": 48000,
+  "sample_format": "pcm_s24le",
+  "intent": "two separate mono streams",
+  "declared_layout": null,
+  "source_offset_seconds": "1/4"
+}

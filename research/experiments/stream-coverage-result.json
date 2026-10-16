@@ -1,0 +1,35 @@
+{
+  "ffmpeg_version": "ffmpeg version 9.0.1 Copyright (c) 2000-2026 the FFmpeg developers",
+  "scope": "CLI reproduction of source argument policy, not execution of the macOS app",
+  "input_streams": [
+    {
+      "index": 0,
+      "type": "video",
+      "codec": "mpeg4"
+    },
+    {
+      "index": 1,
+      "type": "audio",
+      "codec": "pcm_s24le"
+    },
+    {
+      "index": 2,
+      "type": "audio",
+      "codec": "pcm_s24le"
+    }
+  ],
+  "automatic_mapping": [
+    "0",
+    "1"
+  ],
+  "explicit_mapping": [
+    "0",
+    "1",
+    "2"
+  ],
+  "exact_checker_command_exit": 0,
+  "exact_checker_command_stderr": "",
+  "source_unchanged": true,
+  "conclusion": "Current FFmpeg argument policy checks only one of two audio streams on this valid fixture.",
+  "limits": "No damaged-stream fixture, application execution, cancellation or full codec matrix tested."
+}

@@ -1,0 +1,51 @@
+{
+  "movie_timescale": 48000,
+  "tracks": {
+    "1": [
+      {
+        "duration_seconds": "2",
+        "media_time": 0,
+        "rate": [
+          1,
+          0
+        ]
+      }
+    ],
+    "2": [
+      {
+        "duration_seconds": "1/4",
+        "media_time": -1,
+        "rate": [
+          1,
+          0
+        ]
+      },
+      {
+        "duration_seconds": "1",
+        "media_time": 0,
+        "rate": [
+          1,
+          0
+        ]
+      }
+    ],
+    "3": [
+      {
+        "duration_seconds": "1/4",
+        "media_time": -1,
+        "rate": [
+          1,
+          0
+        ]
+      },
+      {
+        "duration_seconds": "1",
+        "media_time": 0,
+        "rate": [
+          1,
+          0
+        ]
+      }
+    ]
+  }
+}

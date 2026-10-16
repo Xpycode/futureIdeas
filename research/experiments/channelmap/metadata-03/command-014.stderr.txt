@@ -1,0 +1,4 @@
+[prores_metadata @ 0x7b1d0180a0] Color primaries 2 is not a valid value
+[vost#0:0/copy @ 0x7b1cc2c000] Error initializing bitstream filter: prores_metadata
+Error opening output file /var/folders/ly/b2sk443n0hq1_z9mgf4q8f4w0000gn/T/channelmap-metadata-7p8ndelq/color_removed.mov.
+Error opening output files: Invalid argument
