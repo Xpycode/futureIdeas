@@ -1,0 +1,122 @@
+{
+  "arrivals": [
+    {
+      "tripId": "1|S5|1",
+      "stop": {
+        "type": "stop",
+        "id": "900120003",
+        "name": "S Ostkreuz",
+        "location": {
+          "type": "location",
+          "latitude": 52.502938,
+          "longitude": 13.469149
+        }
+      },
+      "when": "2026-10-17T08:11:00+02:00",
+      "plannedWhen": "2026-10-17T08:11:00+02:00",
+      "delay": null,
+      "platform": "2",
+      "plannedPlatform": "2",
+      "direction": null,
+      "line": {
+        "type": "line",
+        "id": "s5",
+        "fahrtNr": "0",
+        "name": "S5",
+        "public": true,
+        "mode": "train",
+        "product": "suburban"
+      },
+      "remarks": []
+    },
+    {
+      "tripId": "1|S7|1",
+      "stop": {
+        "type": "stop",
+        "id": "900120003",
+        "name": "S Ostkreuz",
+        "location": {
+          "type": "location",
+          "latitude": 52.502938,
+          "longitude": 13.469149
+        }
+      },
+      "when": "2026-10-17T08:13:00+02:00",
+      "plannedWhen": "2026-10-17T08:12:00+02:00",
+      "delay": 60,
+      "platform": "2",
+      "plannedPlatform": "2",
+      "direction": null,
+      "line": {
+        "type": "line",
+        "id": "s7",
+        "fahrtNr": "0",
+        "name": "S7",
+        "public": true,
+        "mode": "train",
+        "product": "suburban"
+      },
+      "remarks": []
+    },
+    {
+      "tripId": "1|S7|2",
+      "stop": {
+        "type": "stop",
+        "id": "900120003",
+        "name": "S Ostkreuz",
+        "location": {
+          "type": "location",
+          "latitude": 52.502938,
+          "longitude": 13.469149
+        }
+      },
+      "when": null,
+      "plannedWhen": "2026-10-17T08:18:00+02:00",
+      "delay": null,
+      "platform": null,
+      "plannedPlatform": "2",
+      "direction": null,
+      "line": {
+        "type": "line",
+        "id": "s7",
+        "fahrtNr": "0",
+        "name": "S7",
+        "public": true,
+        "mode": "train",
+        "product": "suburban"
+      },
+      "remarks": [],
+      "cancelled": true
+    },
+    {
+      "tripId": "1|S7|3",
+      "stop": {
+        "type": "stop",
+        "id": "900120003",
+        "name": "S Ostkreuz",
+        "location": {
+          "type": "location",
+          "latitude": 52.502938,
+          "longitude": 13.469149
+        }
+      },
+      "when": "2026-10-17T08:23:00+02:00",
+      "plannedWhen": "2026-10-17T08:23:00+02:00",
+      "delay": null,
+      "platform": "2",
+      "plannedPlatform": "2",
+      "direction": null,
+      "line": {
+        "type": "line",
+        "id": "s7",
+        "fahrtNr": "0",
+        "name": "S7",
+        "public": true,
+        "mode": "train",
+        "product": "suburban"
+      },
+      "remarks": []
+    }
+  ],
+  "realtimeDataUpdatedAt": 1792216800
+}

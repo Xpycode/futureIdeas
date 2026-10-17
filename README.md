@@ -30,6 +30,7 @@ These candidates come from the October 15 research. Their order is not a build q
 | [VAM Core](ideas/vam-core/README.md) | Find offline recordings and understand related files | Exploring; detailed spec | What is the smallest useful catalog alongside MediaIngest and Penumbra? |
 | [SoundHarvest](ideas/soundharvest/README.md) | Reuse sounds hidden in personal footage | Exploring; research note | Separate utility or a Penumbra action with a VAM audio view? |
 | [DriftCheck](ideas/driftcheck/README.md) | Diagnose audio slipping out of sync | Exploring; research note | Can real long takes be diagnosed reliably, including ambiguous cases? |
+| [Open & Go](ideas/open-and-go/README.md) | Berlin transit app with personal transfer times | Selected for a personal build; spec and draft core package | Does the draft core build and pass on recorded fixtures? |
 
 ## Features and combined ideas
 

@@ -14,6 +14,8 @@ These are investigation tasks, not approved app changes. Detailed evidence and a
 
 - [x] **B7 — ChannelMap wider feasibility gates complete (2026-10-16).** PCM32, six-channel PCM, measured metadata and bounded lifecycle evidence pass. AAC edit-bounded routes preserve presented samples and exact timelines for three fixtures; 15 negatives rejected and independently reviewed. Audible/Apple/NLE acceptance remains separate and unperformed; desktop control requires explicit permission. No app implementation. [Results](research/2026-10-16-channelmap-wider-feasibility.md).
 
+- [ ] **B8 — Open & Go first build.** Build and test the draft [OpenAndGoCore](ideas/open-and-go/OpenAndGoCore/README.md) on a Mac (written without a compiler), record live transport.rest fixtures for the S7 → 347 scenario, and confirm the [open API questions](research/2026-10-17-open-and-go-api-verification.md#still-unverified-record-live-fixtures).
+
 ## Inbox
 
 - [ ] **I1 — Reproduce MediaCheck cancel/restart races.** Source lacks child cancellation and run-generation protection; actual stale-result/worker-lifetime behavior is not yet tested. [Analysis](research/2026-10-16-mediacheck-gap.md).

@@ -1,0 +1,151 @@
+{
+  "departures": [
+    {
+      "tripId": "1|S5|1",
+      "stop": {
+        "type": "stop",
+        "id": "900100004",
+        "name": "S+U Jannowitzbrücke",
+        "location": {
+          "type": "location",
+          "latitude": 52.515503,
+          "longitude": 13.418027
+        }
+      },
+      "when": "2026-10-17T08:04:00+02:00",
+      "plannedWhen": "2026-10-17T08:04:00+02:00",
+      "delay": null,
+      "platform": "2",
+      "plannedPlatform": "2",
+      "direction": "S Strausberg Nord",
+      "line": {
+        "type": "line",
+        "id": "s5",
+        "fahrtNr": "0",
+        "name": "S5",
+        "public": true,
+        "mode": "train",
+        "product": "suburban"
+      },
+      "remarks": []
+    },
+    {
+      "tripId": "1|S7|1",
+      "stop": {
+        "type": "stop",
+        "id": "900100004",
+        "name": "S+U Jannowitzbrücke",
+        "location": {
+          "type": "location",
+          "latitude": 52.515503,
+          "longitude": 13.418027
+        }
+      },
+      "when": "2026-10-17T08:06:00+02:00",
+      "plannedWhen": "2026-10-17T08:05:00+02:00",
+      "delay": 60,
+      "platform": "2",
+      "plannedPlatform": "2",
+      "direction": "S Ahrensfelde",
+      "line": {
+        "type": "line",
+        "id": "s7",
+        "fahrtNr": "0",
+        "name": "S7",
+        "public": true,
+        "mode": "train",
+        "product": "suburban"
+      },
+      "remarks": []
+    },
+    {
+      "tripId": "1|S3|1",
+      "stop": {
+        "type": "stop",
+        "id": "900100004",
+        "name": "S+U Jannowitzbrücke",
+        "location": {
+          "type": "location",
+          "latitude": 52.515503,
+          "longitude": 13.418027
+        }
+      },
+      "when": "2026-10-17T08:08:00+02:00",
+      "plannedWhen": "2026-10-17T08:08:00+02:00",
+      "delay": null,
+      "platform": "2",
+      "plannedPlatform": "2",
+      "direction": "S Spandau",
+      "line": {
+        "type": "line",
+        "id": "s3",
+        "fahrtNr": "0",
+        "name": "S3",
+        "public": true,
+        "mode": "train",
+        "product": "suburban"
+      },
+      "remarks": []
+    },
+    {
+      "tripId": "1|S7|2",
+      "stop": {
+        "type": "stop",
+        "id": "900100004",
+        "name": "S+U Jannowitzbrücke",
+        "location": {
+          "type": "location",
+          "latitude": 52.515503,
+          "longitude": 13.418027
+        }
+      },
+      "when": null,
+      "plannedWhen": "2026-10-17T08:11:00+02:00",
+      "delay": null,
+      "platform": null,
+      "plannedPlatform": "2",
+      "direction": "S Ahrensfelde",
+      "line": {
+        "type": "line",
+        "id": "s7",
+        "fahrtNr": "0",
+        "name": "S7",
+        "public": true,
+        "mode": "train",
+        "product": "suburban"
+      },
+      "remarks": [],
+      "cancelled": true
+    },
+    {
+      "tripId": "1|S7|3",
+      "stop": {
+        "type": "stop",
+        "id": "900100004",
+        "name": "S+U Jannowitzbrücke",
+        "location": {
+          "type": "location",
+          "latitude": 52.515503,
+          "longitude": 13.418027
+        }
+      },
+      "when": "2026-10-17T08:16:00+02:00",
+      "plannedWhen": "2026-10-17T08:16:00+02:00",
+      "delay": null,
+      "platform": "2",
+      "plannedPlatform": "2",
+      "direction": "S Ahrensfelde",
+      "line": {
+        "type": "line",
+        "id": "s7",
+        "fahrtNr": "0",
+        "name": "S7",
+        "public": true,
+        "mode": "train",
+        "product": "suburban"
+      },
+      "remarks": []
+    }
+  ],
+  "realtimeDataUpdatedAt": 1792216800
+}

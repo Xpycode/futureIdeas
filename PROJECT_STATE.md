@@ -2,7 +2,7 @@
 
 **Purpose:** Explore and compare possible future apps and website extensions. This is a research collection, not an application implementation project.
 **Phase:** Discovery
-**Last updated:** 2026-10-16
+**Last updated:** 2026-10-17
 
 ## Now
 
@@ -13,6 +13,8 @@
 - **Deferred:** 4 backlog investigations/follow-ups and 4 unconfirmed observations in [TASKS.md](TASKS.md).
 
 ## Recent
+
+- 2026-10-17 — Open & Go handoff saved as spec; API shapes checked from upstream sources; draft OpenAndGoCore package (uncompiled) with tests. Next: build on a Mac and record live fixtures.
 
 - 2026-10-16 — Recommended bounded playback acceptance next; prepared research log and Git handoff.
 

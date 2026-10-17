@@ -2,6 +2,16 @@
 
 Record what to explore, combine, pursue or park, why, and what would justify revisiting it. Historical recommendations remain proposals until explicitly adopted.
 
+## 2026 10 17 — Open & Go personal build
+
+**Decision:** Record the owner's Open & Go handoff as a selected personal build and draft its pure core here until an app repository exists.
+
+**Reason:** The owner supplied a build handoff with milestones and acceptance criteria. The cloud session had no Swift toolchain or API access, so it checked API shapes from upstream sources and drafted uncompiled domain code with synthetic fixtures.
+
+**Effect:** [Spec](ideas/open-and-go/SPEC.md), [verification note](research/2026-10-17-open-and-go-api-verification.md) and [OpenAndGoCore](ideas/open-and-go/OpenAndGoCore/README.md). Move the package to the app repository once it is created. The media candidates are unaffected.
+
+**Revisit when:** the first build or recorded fixtures contradict the chaining approach.
+
 ## 2026 10 16 — Organize around exploration
 
 **Decision:** Use Future Ideas to discover and compare possible next projects. Detailed specifications support evaluation; they do not authorize implementation.

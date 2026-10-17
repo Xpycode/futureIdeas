@@ -1,0 +1,92 @@
+{
+  "departures": [
+    {
+      "tripId": "1|347|1",
+      "stop": {
+        "type": "stop",
+        "id": "900120003",
+        "name": "S Ostkreuz",
+        "location": {
+          "type": "location",
+          "latitude": 52.502938,
+          "longitude": 13.469149
+        }
+      },
+      "when": "2026-10-17T08:15:00+02:00",
+      "plannedWhen": "2026-10-17T08:15:00+02:00",
+      "delay": null,
+      "platform": "2",
+      "plannedPlatform": "2",
+      "direction": "Work Stop",
+      "line": {
+        "type": "line",
+        "id": "347",
+        "fahrtNr": "0",
+        "name": "347",
+        "public": true,
+        "mode": "bus",
+        "product": "bus"
+      },
+      "remarks": []
+    },
+    {
+      "tripId": "1|347|2",
+      "stop": {
+        "type": "stop",
+        "id": "900120003",
+        "name": "S Ostkreuz",
+        "location": {
+          "type": "location",
+          "latitude": 52.502938,
+          "longitude": 13.469149
+        }
+      },
+      "when": "2026-10-17T08:25:00+02:00",
+      "plannedWhen": "2026-10-17T08:25:00+02:00",
+      "delay": null,
+      "platform": "2",
+      "plannedPlatform": "2",
+      "direction": "Work Stop",
+      "line": {
+        "type": "line",
+        "id": "347",
+        "fahrtNr": "0",
+        "name": "347",
+        "public": true,
+        "mode": "bus",
+        "product": "bus"
+      },
+      "remarks": []
+    },
+    {
+      "tripId": "1|347|3",
+      "stop": {
+        "type": "stop",
+        "id": "900120003",
+        "name": "S Ostkreuz",
+        "location": {
+          "type": "location",
+          "latitude": 52.502938,
+          "longitude": 13.469149
+        }
+      },
+      "when": "2026-10-17T08:35:00+02:00",
+      "plannedWhen": "2026-10-17T08:35:00+02:00",
+      "delay": null,
+      "platform": "2",
+      "plannedPlatform": "2",
+      "direction": "Work Stop",
+      "line": {
+        "type": "line",
+        "id": "347",
+        "fahrtNr": "0",
+        "name": "347",
+        "public": true,
+        "mode": "bus",
+        "product": "bus"
+      },
+      "remarks": []
+    }
+  ],
+  "realtimeDataUpdatedAt": 1792216800
+}
