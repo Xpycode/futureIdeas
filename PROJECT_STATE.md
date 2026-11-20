@@ -2,7 +2,7 @@
 
 **Purpose:** Explore and compare possible future apps and website extensions. This is a research collection, not an application implementation project.
 **Phase:** Discovery
-**Last updated:** 2026-10-17
+**Last updated:** 2026-11-20
 
 ## Now
 
@@ -13,6 +13,8 @@
 - **Deferred:** 4 backlog investigations/follow-ups and 4 unconfirmed observations in [TASKS.md](TASKS.md).
 
 ## Recent
+
+- 2026-11-20 — Captured the [tile square](ideas/tile-square/README.md) idea for MousePlus and QuickStatsPanel and a KinoB scraper last-run note in the inbox.
 
 - 2026-10-17 — Open & Go handoff saved as spec; API shapes checked from upstream sources; draft OpenAndGoCore package (uncompiled) with tests. Next: build on a Mac and record live fixtures.
 
